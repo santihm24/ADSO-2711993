@@ -4,15 +4,14 @@ public class Ejercicio02 {
 
         Scanner entrada = new Scanner(System.in);
 
-        System.out.print("Digite un numero: ");
-        int n1 = entrada.nextInt();
+        System.out.print("Digite la temperatura en grados celcius: ");
+        float grados_celcius = entrada.nextFloat();
 
-        System.out.print("digite otro numero: ");
-        int n2 = entrada.nextInt();
+        float temperatura = (grados_celcius*9/5)*32;
 
-        int suma = n1+n2;
+        System.out.print("La temperatura en grados farenheit es: "+temperatura);
+        
 
-        System.out.print("la suma de los numeros es: "+suma);
 
     }
 } 
