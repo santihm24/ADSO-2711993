@@ -1,0 +1,13 @@
+#contentBotones{
+
+    justify-content: center;
+    align-items: center;
+}
+body {
+    
+    border: solid black;
+}
+#borde{
+
+   border: 3px solid yellow;
+}
