@@ -242,7 +242,7 @@ public class Pokemon extends javax.swing.JFrame {
         int paginaInicial = Math.max(1, Math.min(pagina - 3, totalPaginas - 6));
         int paginaFinal = Math.min(totalPaginas, paginaInicial + 6);
 
-        JButton btnPrimeraPagina = new JButton("Primera");
+        JButton btnPrimeraPagina = new JButton("<<");
         btnPrimeraPagina.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -253,7 +253,7 @@ public class Pokemon extends javax.swing.JFrame {
         });
         panelPaginador.add(btnPrimeraPagina);
 
-        JButton btnPaginaAnterior = new JButton("Anterior");
+        JButton btnPaginaAnterior = new JButton("<");
         btnPaginaAnterior.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -286,7 +286,7 @@ public class Pokemon extends javax.swing.JFrame {
             panelPaginador.add(btnPagina);
         }
 
-        JButton btnPaginaSiguiente = new JButton("Siguiente");
+        JButton btnPaginaSiguiente = new JButton(">");
         btnPaginaSiguiente.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -299,7 +299,7 @@ public class Pokemon extends javax.swing.JFrame {
         });
         panelPaginador.add(btnPaginaSiguiente);
 
-        JButton btnUltimaPagina = new JButton("Última");
+        JButton btnUltimaPagina = new JButton(">>");
         btnUltimaPagina.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
