@@ -16,7 +16,7 @@ public class Digimon extends javax.swing.JFrame {
     String listaImagenes[];
     int posActual;
 
-    public Digimon(JsonObject data) {
+    public Digimon(JsonObject data, Object par1) {
         ConsumoAPI consumo = new ConsumoAPI();
         String respuesta = consumo.consumoGET( data.get("url").getAsString() );
         this.digimon = JsonParser.parseString(respuesta).getAsJsonObject();
@@ -186,7 +186,7 @@ public class Digimon extends javax.swing.JFrame {
     }
 
     
-    @SuppressWarnings("unchecked");{}
+    @SuppressWarnings("unchecked");
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
