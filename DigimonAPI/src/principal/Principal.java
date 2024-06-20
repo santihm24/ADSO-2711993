@@ -1,13 +1,11 @@
-
 package principal;
 
+ class Principal {
 
-public class Principal {
-    
+   
     public static void main(String[] args) {
         
-        
-        Digimon ventana = new Digimon();
+        Digimones ventana = new Digimones();
     }
     
 }
